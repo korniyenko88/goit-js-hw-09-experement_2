@@ -23,3 +23,77 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* Стилі колекції картинок */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.gallery-item {
+  margin: 12px;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+.modal-gallery-image {
+  width: 1112px;
+  height: 640px;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+/* кінець стилів колекції картинок */
+
+/* Стилі форми */
+
+.feedback-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+font-family: "Montserrat", sans-serif;
+}
+
+button {
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+height: 40px;
+background: #4e75ff;
+border: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+font-family: "Montserrat", sans-serif;
+}

@@ -95,7 +95,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-
+// Опція для прив'язки опису до зображення
 lightbox.on('show.lightbox', () => {
   const caption = lightbox.selectedElement.querySelector('img').alt;
   lightbox.setCaption(caption);
