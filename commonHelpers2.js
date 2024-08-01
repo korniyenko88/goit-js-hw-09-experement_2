@@ -1,4 +1,4 @@
-import"./assets/styles-64221358.js";const o=()=>`
+import"./assets/styles-f0e51143.js";const o=()=>`
     <form class="feedback-form" autocomplete="off">
         <label>
             Email
