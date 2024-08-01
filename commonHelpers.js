@@ -20,4 +20,4 @@ import{S as m}from"./assets/vendor-10cb7c31.js";(function(){const r=document.cre
         </label>
         <button type="submit">Submit</button>
     </form>`,y=document.querySelector(".task-form");y.innerHTML=f();const a={email:"",message:""},i=document.querySelector(".feedback-form"),c=JSON.parse(localStorage.getItem("feedback-form-state"));c&&(a.email=c.email||"",a.message=c.message||"",i.email.value=a.email,i.message.value=a.message);i.addEventListener("input",t=>{const{name:r,value:s}=t.target;a[r]=s.trim(),localStorage.setItem("feedback-form-state",JSON.stringify(a))});i.addEventListener("submit",t=>{if(t.preventDefault(),!a.email||!a.message){alert("Fill please all fields");return}console.log(a),localStorage.removeItem("feedback-form-state"),a.email="",a.message="",i.email.value="",i.message.value=""});
-//# sourceMappingURL=commonHelpers3.js.map
+//# sourceMappingURL=commonHelpers.js.map
