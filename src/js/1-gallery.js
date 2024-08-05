@@ -96,7 +96,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
 });
 
 
-lightbox.on('show.lightbox', () => {
-  const caption = lightbox.selectedElement.querySelector('img').alt;
-  lightbox.setCaption(caption);
-});
+
